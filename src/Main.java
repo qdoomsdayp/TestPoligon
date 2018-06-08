@@ -16,7 +16,16 @@ public class Main {
         /*Sort sort = new Sort();
         sort.example(5000,sort); */                  //TODO n - количество элементов в массиве
 
-    }
+        /*Lambda lambda = new Lambda();
+        lambda.example();*/
+
+        /*FunctionalIterface functionalIterface = new FunctionalIterface();
+        functionalIterface.example();*/
+
+        Strems strems = new Strems();
+        strems.example();
 
     }
+
+}
 
