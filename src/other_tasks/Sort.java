@@ -1,10 +1,11 @@
+package other_tasks;
+
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
-import java.sql.SQLOutput;
 import java.util.*;
 
 
-/* Если добавлять сортировку то нужно в названии метода пометить ее словом Sort или sort, в других методах очень желательно чтобы такого слова не было*/
+/* Если добавлять сортировку то нужно в названии метода пометить ее словом other_tasks.Sort или sort, в других методах очень желательно чтобы такого слова не было*/
 public class Sort {
     public HashMap<String, Integer[]> hashMap;
     public HashMap<String, Class[]> nameParametersType;
@@ -194,7 +195,7 @@ public class Sort {
         Method[] methods = Sort.class.getMethods();
         nameParametersType = new HashMap<>();
         for (int i = 0; i < methods.length; i++) {
-            if (methods[i].getName().contains("sort") || methods[i].getName().contains("Sort")) {
+            if (methods[i].getName().contains("sort") || methods[i].getName().contains("other_tasks.Sort")) {
                 nameParametersType.put(methods[i].getName(), methods[i].getParameterTypes());
             }
         }

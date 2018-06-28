@@ -1,3 +1,5 @@
+package other_tasks;
+
 import java.util.Collections;
 
 public class Pyramid {
@@ -65,7 +67,7 @@ public class Pyramid {
         }
     }
 
-    //java 8 Invert Pyramid
+    //java 8 Invert other_tasks.Pyramid
     public void pyramid8Invert(int n) {
         for (int i = n / 2; i >= 0; i--) {
             System.out.println(String.join("", Collections.nCopies(n / 2 - i, " "))

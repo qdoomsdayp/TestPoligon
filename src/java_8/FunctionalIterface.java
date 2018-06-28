@@ -1,3 +1,5 @@
+package java_8;
+
 import java.util.function.*;
 
 
